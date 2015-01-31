@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Indicator</title>
+    <style type="text/css">
+	div{	
+			height:20px;
+			overflow:hidden;
+	}
+		.big{ 
+			width:100%;		
+			border:2px solid black;
+			border-radius:20px 20px 20px 20px;			
+			background: linear-gradient(to bottom, #404040, #909090);
+		}
+		.inner{	
+			width:34%;
+			border:0px solid blue;
+			border-radius:20px 0 0 20px;			
+            background: linear-gradient(to top, #00BFFF, #1E90FF, #00BFFF);	
+			box-shadow: 5px 0 5px #303030;
+		}
+    </style>
+</head>
+<body>    
+        <div class="big">
+			<div class="inner"></div> 		
+		</div>   
+</body>
+</html>
