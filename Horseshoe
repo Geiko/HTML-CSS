@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Horseshoe</title>
+    <style type="text/css">
+		.basic{
+			width:100px;
+			height:100px;
+			border-radius:50%;
+			line-height:100px;
+			text-align: center;
+			background-color:yellow;
+			border:25px solid green;
+			border-right: 20px solid blue;
+		}
+		.digits{
+			font-size: 40px;
+		}
+		.percent{
+			font-size: 20px;
+		}
+		.n{
+			color:gray;
+			width:150px;
+			font-style:italic;
+			text-align:center;
+			margin-top:10px;
+		}		
+    </style>
+</head>
+<body>    
+	<div class="basic">
+		<div class="digits">
+			75<span class="percent">%</span>
+		</div>
+	</div>
+	<div class="n">Рис.1</div>
+</body>
+</html>
