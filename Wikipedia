@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8"/>
+    <title>Exam</title>
+	   <style type="text/css">
+         body{
+           width: 100%;
+         }
+         html{ 
+           overflow: scroll;
+         }
+		 sup{
+	       color: #0645AD;
+	     }
+		 .basic{
+		   border-left: 1px solid #A7D7F9;
+		   height: 100%;
+		   margin-left: 162px;
+		 }
+         .textmenu{
+           float: left;
+           width: 160px;
+           height: 100%;
+           background: #F6F6F6;
+		 }
+         .emblem{
+           margin-left: 25px;
+           margin-top: 20px;
+           padding-bottom: 5px;
+           width: 110px;
+           height: 110px;
+           background: url('http://s5.postimg.org/3s4591ujb/original.jpg') no-repeat 50% 50%;
+           background-size: cover;
+         }
+         .block{
+            width: 120px;
+            border-bottom: 1px solid #D5D5D5;
+            font-size: 12px;
+            margin-left: 25px;
+            margin-top: 20px;  
+            padding-bottom: 5px;
+         }
+         .block6{
+            border-bottom: none;
+         }
+         .block2, .block3, .block4, .block5, .block6, .block7{
+            margin-top: 10px;
+         }
+         .textmenu1{
+           margin-left: -20px;
+         }
+         .textmenu1>a{
+            color: #0645AD;
+            text-decoration: none;
+         }
+         .textmenu1>a:hover{
+           color: #0645AD;
+           text-decoration: underline;
+         }
+         .text{
+           color: #0B0080;
+         }
+         .textmenu2>a{
+           color: #0645AD;
+           text-decoration: none;
+         }
+         .textmenu2>a:hover{
+            text-decoration: underline;
+         }
+         .text1{
+           color: #4D4D4D;
+         }
+         
+         .textmenulist{
+           list-style-type: none; 
+           margin-left: -25px;
+           margin-top: 0px;
+         }
+         .textmenulist:nth-child(1){
+           margin-left: -20px;
+         }
+		 .textmenu2list{
+		    list-style-type: none;
+			margin-left: -20px;
+		 }
+		.languagelist{
+     		list-style-type: none;
+			margin-left: -20px;
+		 }
+         .language>a{
+           color: #0645AD;
+           text-decoration: none;
+         }
+         .language>a:hover{
+           text-decoration: underline;
+         }
+         .regulate>a{
+           color: #797979;
+           margin-left: 15px;
+           text-decoration: none;
+         } 
+         .search{
+           width: 200px; /* Ширина поля с кнопкой */
+           border: 1px solid #cccccc; /* Параметры рамки */
+           min-height: 20px; /* Минимальная высота */
+         }
+         input[type="search"]{
+           border: none; /* Убираем рамку */
+           outline: none; /* Убираем свечение в Chrome и Safari */
+           -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+           width: 175px; /* Ширина поля */
+           line-height: 18px; /* Выравнивание по середине */
+         }
+           input[type="submit"]{
+           width: 20px; /* Ширина кнопки */
+           height: 20px; /* Высота кнопки */
+           border: none; /* Убираем рамку */
+           background: url(http://www.rmlpharma.com/communities/9/004/006/926/269/images/4524533675_pre.jpg) no-repeat 50% 50%; /* Параметры фона */
+           background-size: 90%;
+        }
+        .selected{ 
+           display: inline-block;
+           font-size: 14px;
+		   margin-top: 20px;
+		   margin-left: -5px;
+		}
+        span>a{ 
+          text-decoration: none; 
+		  color: #0645AD;
+        } 		
+        .selected1{
+		 width: 90px;
+		 height: 30px;
+         line-height: 30px;
+		 margin-left: 20px;
+		 text-align: center;
+		}		
+        .selected2{
+		 width: 90px;
+		 height: 30px;
+		 border-left: solid 1px #A7D7F9;
+         border-right: solid 1px #A7D7F9;
+		 border-bottom: solid 1px #A7D7F9;
+		 line-height: 30px;
+		 background: linear-gradient(to top, #EAF3F8, #FAFCFE);
+		 text-align: center;
+		}		
+        .selected3{
+          width: 60px;
+		  height: 30px;
+          border-bottom: solid 1px #A7D7F9;
+		  border-left: solid 1px #A7D7F9;
+          border-right: solid 1px #A7D7F9;
+		  line-height: 30px;
+		  text-align: center;
+		  padding-right: 10px;
+		  background: linear-gradient(to top, #EAF3F8, #FAFCFE);
+		 }
+		 .selected4{
+          width: 110px;
+		  height: 30px;
+          border-left: solid 1px #A7D7F9;
+          border-right: solid 1px #A7D7F9;
+		  line-height: 30px;
+		  text-align: center;
+		 }
+		 .selected5{
+          width: 90px;
+		  height: 30px;
+          border-left: solid 1px #A7D7F9;
+          border-right: solid 1px #A7D7F9;
+		  border-bottom: solid 1px #A7D7F9;
+		  line-height: 30px;
+		  text-align: center;
+		  background: linear-gradient(to top, #EAF3F8, #FAFCFE);
+		 }
+		 .selected6{
+          width: 150px;
+		  height: 30px;
+          border-left: solid 1px #A7D7F9;
+          border-right: solid 1px #A7D7F9;
+		  border-bottom: solid 1px #A7D7F9;
+		  line-height: 30px;
+		  text-align: center;
+		  background: linear-gradient(to top, #EAF3F8, #FAFCFE);
+		 }
+		 .selected7{
+          width: 90px;
+		  height: 30px;
+          border-left: solid 1px #A7D7F9;
+          border-right: solid 1px #A7D7F9;
+		  border-bottom: solid 1px #A7D7F9;
+		  line-height: 30px;
+		  text-align: center;
+		  background: linear-gradient(to top, #EAF3F8, #FAFCFE);
+		 }
+		 .selected0{
+          width: 750px;
+		  height: 30px;
+          border-left: solid 1px #A7D7F9;
+          border-right: solid 1px #A7D7F9;
+		  border-bottom: solid 1px #A7D7F9;
+		  line-height: 30px;
+		  text-align: center;
+		 }
+		 .selected0 a{
+		   color: #ffffff;
+		 }
+         .page1{
+		  position: absolute;
+	      width: 90%;
+		  left: 180px;
+	    }
+		.selected8{
+          margin-left: 5px;
+		 }
+        h1{
+          font-weight: normal;
+          font-size: 28px;
+        }
+        hr{
+		 position: absolute;
+         margin-top: -10px;
+		 left: 160px;
+		 width: 100%;
+		 margin-left: -160px;
+        }
+        .wiki{
+		  position: relative;
+          font-family: Arial;
+          font-size: 13px;
+          top: 15px;
+          left: 10px;		  
+		}
+	    .wiki1{
+	      font-family: Arial;
+          font-size: 13px;
+		  position: relative;
+		  text-decoration: none;
+		  color: #0645AD;
+		  text-align: right;
+	    }
+		.wiki1 a{
+	      text-decoration: none;
+		  color: #0645AD;
+	    }
+		.wiki1 a:hover{
+		   text-decoration: underline;
+		}
+	    .insert{
+		  border: solid 1px #A7D7F9;
+          background: #EAF2FD;
+          width: 99%;
+          height: 25px;
+          font-family: Arial;
+          font-size: 13px;
+          margin: 10px 0 0 20px;
+	      line-height: 25px;
+		  text-align: center;
+	    }
+	    .insert a{
+	      font-size: 13px;
+		  text-decoration: none;
+		  color: #0645AD;
+	    }
+		.insert a:hover{
+		   text-decoration: underline;
+		}
+		.description{
+	      font-family: Arial;
+          font-size: 14px;
+		  position: relative;
+		  margin-top: 150px;
+		  left: 20px;
+		}
+      .description a{
+	      text-decoration: none;
+		  color: #0645AD;
+	  }
+	  .description a:hover{
+		   text-decoration: underline;
+	  }
+	    a>.red{
+		  color: #BA0000;
+		}
+		.red:hover{
+		  text-decoration: underline #BA0000;
+		}
+		.imgyandex{
+		   position: relative;
+		   border: 1px solid #AAAAAA;
+		   width: 270px;
+           height: 185px; 
+           padding: 5px;
+		   font-family: Arial;
+           font-size: 13px;
+		   right: 15px;
+		   float: right;
+		   background: #F9F9F9;
+		}
+		.imgyandex a{
+		   text-decoration: none;
+		   color: #0645AD
+		}
+        .imgyandex a:hover{
+		   text-decoration: underline;
+		}
+		p a{
+		  color: #0645AD;
+		  text-decoration: none;
+		}
+		p a:hover{
+		  text-decoration: underline;
+		}
+		.descriptionmenu{
+		   position: absolute;
+		   left: 190px;
+		   border: 1px solid #AAAAAA;
+		   width: 260px;
+           height: 235px; 
+           padding: 5px;
+		   font-family: Arial;
+           font-size: 13px;
+		   background: #F9F9F9;
+		 }
+		.listcontents{
+		   text-align: center; 
+		}
+		.descriptionmenu1{
+		   list-style-type: none;
+		   padding-left: 0;
+		   line-height: 1.5;
+		}
+		.descriptionmenu1 a{
+		   text-decoration: none;
+		   color: #0645AD;
+		}
+		.descriptionmenu1 a:hover{
+		   text-decoration: underline;
+		}
+		.wiki2{
+		  position: relative;
+          top: 270px;
+          left: 20px;
+        }
+	    h1{
+	     font-weight: normal;
+         font-size: 24px;
+	    }
+        .wiki3{
+	      position: absolute;
+	      top: 5px;
+		  left: 400px;
+		}
+		.wiki3 a{
+		  font-family: Arial;
+          font-size: 13px;
+		  text-decoration: none;
+		  color: #0645AD;
+	      text-decoration: none;
+		  color: #0645AD;
+	    }
+		.wiki3 a:hover{
+		   text-decoration: underline;
+		}
+	    .wiki2text{
+		   position: absolute;
+		   font-family: Arial;
+           font-size: 14px;
+		   line-height: 1.5;
+		   margin-top: -5px;
+		   
+		}
+		.wiki4{
+		  position: relative;
+          top: 350px;
+          left: 20px;		  
+		}
+	   h1{
+	     font-weight: normal;
+         font-size: 24px;
+	   }
+       .wiki5{
+	      position: relative;
+	      top: -35px;
+		  left: 140px;
+		}
+		.wiki5 a{
+		  font-family: Arial;
+          font-size: 13px;
+		  text-decoration: none;
+		  color: #0645AD;
+	      text-decoration: none;
+		}
+		.wiki5 a:hover{
+		   text-decoration: underline;
+		}
+		.wiki4text{
+		   font-family: Arial;
+           font-size: 14px;
+		   line-height: 1.5;
+		   margin-top: -20px;
+		}
+		.wiki4text a{
+		   font-family: Arial;
+           font-size: 14px;
+		   text-decoration: none;
+		   color: #0645AD;
+		}
+		.wiki4text a:hover{
+		   text-decoration: underline;
+		}
+	    .wiki4list{
+		   font-family: Arial;
+           font-size: 14px;
+		   line-height: 1.5;
+		   margin-top: -20px;
+		}
+		.wiki4list li{
+		  color: #00528C;
+		}
+		.wiki4list li span{
+		  color: black;
+		}
+		.wiki6{
+	      position: relative;
+	      top: 350px;
+		  left: 20px;
+		}
+		.wiki8{
+	      position: relative;
+	      top: 350px;
+		  left: 20px;
+		}
+		.wiki10{
+	      position: relative;
+	      top: 350px;
+		  left: 20px;
+		}
+		.wiki7{
+		  position: relative;
+	      top: -35px;
+		  left: 190px;
+		}
+		.wiki9{
+		  position: relative;
+	      top: -35px;
+		  left: 215px;
+		}
+		.wiki11{
+		  position: relative;
+	      top: -35px;
+		  left: 430px;
+		}
+		.wiki7 a, .wiki9 a, .wiki11 a{
+		  font-family: Arial;
+          font-size: 13px;
+		  text-decoration: none;
+		  color: #0645AD;
+		}
+		.wiki7 a:hover, .wiki9 a:hover, .wiki11 a:hover{ 
+		   text-decoration: underline;
+		}
+		.wiki7text, .wiki9text, .wiki11text{
+		   font-family: Arial;
+           font-size: 14px;
+		   margin-top: -20px;
+		}
+		.wiki7text a, .wiki9text a, .wiki11text a{
+		   font-family: Arial;
+           font-size: 14px;
+		   text-decoration: none;
+		   color: #0645AD;
+		}
+		.wiki7text a:hover, .wiki9text a:hover, .wiki11text a:hover{
+		   text-decoration: underline;
+		}
+		.wiki12{
+		  position: relative;
+	      top: 350px;
+		  left: 20px;
+		}
+		.wiki13{
+		  position: relative;
+	      top: -35px;
+		  left: 95px;
+		}
+		.wiki13 a{
+		  font-family: Arial;
+          font-size: 13px;
+		  text-decoration: none;
+		  color: #0645AD;
+		}
+		.wiki13 a:hover{ 
+		   text-decoration: underline;
+		}
+		.wiki12text{
+		   font-family: Arial;
+           font-size: 14px;
+		   margin-top: -20px;
+		}
+		.wiki12text a{
+		   font-family: Arial;
+           font-size: 14px;
+		   text-decoration: none;
+		   color: #0645AD;
+		}
+		.wiki12text a:hover{
+		   text-decoration: underline;
+		}
+		
+       </style>  
+  <body>
+    
+  <div class="page">
+   <div class="textmenu">
+    <div class="emblem"></div>      
+      <div class="block block1">
+       <ul class="textmenulist">
+        <li class="textmenu1"><a href="#"><span class="text">Заглавная страница</span></a></br>
+        <li class="textmenu1"><a href="#">Рубрикация</a></br>
+        <li class="textmenu1"><a href="#">Указатель А-Я</a></br>
+        <li class="textmenu1"><a href="#">Избранные статьи</a></br>
+        <li class="textmenu1"><a href="#">Случайная статья</a></br>
+        <li class="textmenu1"><a href="#">Текущие события</a></br>
+       </ul>
+      </div>
+      <div class="block block2"><span class="text1">Участие</span></br>
+       <ul class="textmenu2list">
+        <li class="textmenu2"><a href="#">Сообщить об ошибке</a></br>
+        <li class="textmenu2"><a href="#">Портал сообщества</a></br>
+        <li class="textmenu2"><a href="#">Форум</a></br>
+        <li class="textmenu2"><a href="#">Свежие правки</a></br>
+        <li class="textmenu2"><a href="#">Новые страницы</a></br>
+        <li class="textmenu2"><a href="#">Справка</a></br>
+        <li class="textmenu2"><a href="#">Пожертвования</a></br>
+       </ul>
+      </div>
+      <div class="block block3"><span class="text1">Инструменты</span>
+       <ul class="textmenu2list">
+        <li class="textmenu2"><a href="#">Ссылки сюда</a></br>
+        <li class="textmenu2"><a href="#">Связанные правки</a></br>
+        <li class="textmenu2"><a href="#">Спецстраницы</a></br>
+        <li class="textmenu2"><a href="#">Постоянная ссылка</a></br>
+        <li class="textmenu2"><a href="#">Сведения о странице</a></br>
+        <li class="textmenu2"><a href="#">Цитировать страницу</a></br>
+       </ul>
+      </div>
+      <div class="block block4"><span class="text1">Печать/экспорт</span>
+       <ul class="textmenu2list">
+        <li class="textmenu2"><a href="#">Создать книгу</a></br>
+        <li class="textmenu2"><a href="#">Скачать как PDF</a></br>
+        <li class="textmenu2"><a href="#">Версия для печати</a></br>
+       </ul>
+      </div>
+      <div class="block block5"><span class="text1">В других проектах</span>
+       <ul class="textmenu2list">
+        <li class="textmenu2"><a href="#">Викицитатник</a></br>
+        <li class="textmenu2"><a href="#">Викиданные</a></br>
+       </ul>
+      </div>
+      <div class="block block6"><span class="text1">На других языках</span>
+        <ul class="languagelist">
+         <li class="language"><a href="#" title="Африканс">Afrikaans</a></li>
+         <li class="language"><a href="#" title="Арабский">العربية</a></li>
+         <li class="language"><a href="#" title="Азербайджанский">Azərbaycanca</a></li>
+         <li class="language"><a href="#" title="Белорусский">Беларуская (тарашкевіца)</a></li>
+         <li class="language"><a href="#" title="Болгарский">Български</a></li>
+         <li class="language"><a href="#" title="Бенгальский">বাংলা</a></li>
+         <li class="language"><a href="#" title="Каталанский">Català</a></li>
+         <li class="language"><a href="#" title="Чешский">Čeština</a></li>
+         <li class="language"><a href="#" title="Датский">Dansk</a></li>
+         <li class="language"><a href="#" title="Английский">English</a></li>
+         <li class="language"><a href="#" title="Испанский">Español</a></li>
+         <li class="language"><a href="#" title="Эстонский">Eesti</a></li>
+         <li class="language"><a href="#" title="Баскский">Euskara</a></li>
+         <li class="language"><a href="#" title="Персидский">فارسی</a></li>
+         <li class="language"><a href="#" title="Галисийский">Galego</a></li>
+         <li class="language"><a href="#" title="Иврит">עברית</a></li>
+         <li class="language"><a href="#" title="Хорватский">Hrvatski</a></li>
+         <li class="language"><a href="#" title="Индонезийский">Bahasa Indonesia</a></li>
+         <li class="language"><a href="#" title="Итальянский">Italiano</a></li>
+         <li class="language"><a href="#" title="Японский">日本語</a></li>
+         <li class="language"><a href="#" title="Казахский">Қазақша</a></li>
+         <li class="language"><a href="#" title="Корейский">한국어</a></li>
+         <li class="language"><a href="#" title="Киргизский">Кыргызча</a></li>
+         <li class="language"><a href="#" title="Lombard">Lumbaart</a></li>
+         <li class="language"><a href="#" title="Малайский">Bahasa Melayu</a></li>
+         <li class="language"><a href="#" title="Норвежский">Norsk bokmål</a></li>
+         <li class="language"><a href="#" title="Польский">Polski</a></li>
+         <li class="language"><a href="#" title="Португальский">Português</a></li>
+         <li class="language"><a href="#" title="Румынский">Română</a></li>
+         <li class="language"><a href="#" title="Rusyn">Русиньскый</a></li>
+         <li class="language"><a href="#" title="сербскохрватский">Srpskohrvatski/српскохрватски</a></li>
+         <li class="language"><a href="#" title="Simple English">Simple English</a></li>
+         <li class="language"><a href="#" title="Словацкий">Slovenčina</a></li>
+         <li class="language"><a href="#" title="Словенский">Slovenščina</a></li>
+         <li class="language"><a href="#" title="Албанский">Shqip</a></li>
+         <li class="language"><a href="#" title="Сербский">Српски/srpski</a></li>
+         <li class="language"><a href="#" title="Шведский">Svenska</a></li>
+         <li class="language"><a href="#" title="Тайский">ไทย</a></li>
+         <li class="language"><a href="#" title="Турецкий">Türkçe</a></li>
+         <li class="language"><a href="#" title="Татарский">Татарча/tatarça</a></li>
+         <li class="language"><a href="#" title="Украинский">Українська</a></li>
+         <li class="language"><a href="#" title="Вьетнамский">Tiếng Việt</a></li>
+         <li class="language"><a href="#" title="Китайский">中文</a></li>
+         <li class="regulate"><a href="#" title="Править межъязыковые ссылки">Править ссылки</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="basic"> 
+      <div class="bookmark">
+       <ul>
+        <li id="main" class="selected selected1"><span><a href="#" title="Просмотр основной страницы">Статья</a></span></li>
+        <li id="talk " class="selected selected2"><span><a href="#" title="Обсуждение">Обсуждение</a></span></li>
+		<li id="talk " class="selected selected0"><span><a href="#">Zerro</a></span></li>
+		<li id="read" class="selected selected3"><span><a href="#" title="Читать">Читать</a></span></li>
+        <li id="current" class="selected selected4"><span><a href="#" title="Текущая версия"> Текущая версия</a></span></li>
+        <li id="edit" class="selected selected5"><span><a href="#" title="Править">Править</a></span></li>
+        <li id="edit_wiki" class="selected selected6"><span><a href="#" title="Править вики-текст">Править вики-текст</a></span></li>
+        <li id="history" class="selected selected7"><span><a href="#" title="История"> История </a></span></li>
+        <li class="selected selected8"><div class="search"><input type="search" name="q" value="Поиск"><input type="submit" value=""></div>
+       </ul>  
+    </div>
+     <div class="page1">
+    <h1>Программист</h1><hr>
+    <div class="body-content">
+       <div class="wiki">Материал из Википедии — свободной энциклопедии</div>
+	   <div class="wiki1">[ <a href="#" title="Править введение">править</a> | <a href="#" title="Править введение">править вики-текст</a> ]</div>
+       <div class="insert">Текущая версия страницы пока <a class="insert_text" href="#" title="Википедия:Проверка статей/Пояснение для читателей">не проверялась</a> опытными участниками и может значительно отличаться от <a class="insert_text" href="#">версии</a>, проверенной 27 февраля 2013; проверки требуют <a class="insert_text" href="#">92 правки</a>.</div>
+</div>
+</div> 
+    <p class="description"><b>Программи́ст</b> — специалист, занимающийся написанием и <a href="#"><span class="red">корректировкой</span></a> <a href="#">программ</a> для <a href="#">компьютеров<sup>[1]</sup></a> (любых вычислительных устройств), то есть <a href="#">программированием</a>.</p>
+    <div class="descriptionmenu">
+	 <p class="listcontents">Содержание [<a href="#">убрать</a>] </p>
+    <ol class="descriptionmenu1">
+	  <li class="descriptionmenutext"><a href="#">1 Место программирования в обществе</a></li>
+      <li class="descriptionmenutext"><a href="#">2 Образование</a></li>
+      <li class="descriptionmenutext"><a href="#">3 Самообразование</a></li>
+      <li class="descriptionmenutext"><a href="#">4 Словоупотребление</a></li>
+      <li class="descriptionmenutext"><a href="#">5 Прикладные и системные программисты</a></li>
+      <li class="descriptionmenutext"><a href="#">6 История</a></li>
+      <li class="descriptionmenutext"><a href="#">7 Профессиональный праздник</a></li>
+      <li class="descriptionmenutext"><a href="#">8 Интересные факты</a></li>
+      <li class="descriptionmenutext"><a href="#">9 Примечания</a></li>
+      <li class="descriptionmenutext"><a href="#">10 Литература</a></li>
+	</ol>  
+</div>
+<div class="imgyandex">
+<img id="img1" src="http://s5.postimg.org/82it4mzmf/image.jpg" width=270px  />
+<figcaption>Программисты в офисе «<a href="#">Яндекса</a>».</figcaption>
+</div>
+    <div class="wiki2">
+	   <h1>Место программирования в обществе</h1><hr>
+	    <div class="wiki3">[ <a href="#" title="Править введение">править</a> | <a href="#" title="Править введение">править вики-текст</a> ]</div>
+	    <p class="wiki2text">Программирование как род занятий может являться основной профессиональной деятельностью специалиста, либо использоваться в качестве вспомогательной деятельности для решения иных профессиональных задач, либо же использоваться в</br>непрофессиональной сфере (как инструмент решения задач или ради получения удовольствия от процесса программирования). Термин «программист» не обязательно подразумевает профессиональное образование или профессиональную</br>деятельность.</p>
+	 </div>
+	 <div class="wiki4">
+	   <h1>Образование</h1><hr>
+	    <div class="wiki5">[ <a href="#" title="Править введение">править</a> | <a href="#" title="Править введение">править вики-текст</a> ]</div>
+	    <div class="wiki4text">
+		<p>Как основная профессиональная деятельность программирование используется в технической и в научной областях.</p>
+        <p>В технике выделяются средняя техническая квалификация <a href="#"><span class="red">техник-программист</a> (ранее «программист-лаборант») и высшая техническая квалификация <a href="#">инженер-программист</a>. Предметом деятельности специалистов с соответствующей квалификацией (техников и инженеров) является проектирование, разработка и производство программного обеспечения, как промышленной продукции, удовлетворяющей заданным функциональным, конструктивным и технологическим требованиям (результатом деятельности является <a href="#">программное обеспечение</a>). В России подготовка инженеров-программистов ведётся по профилю подготовки «Программное обеспечение вычислительной техники и автоматизированных систем» направления «Информатика и вычислительная техника»<sup>[2]</sup>.</p>
+        <p>Существует подготовка математиков-программистов по направлению «Математическое обеспечение и администрирование информационных систем»<sup>[3]</sup>.</p>
+        <p>В конце 2000-х в России появилось новое направление подготовки программистов «Программная инженерия»<sup>[4]</sup>. Областью профессиональной деятельности выпускников по этому направлению является <a href="#">индустриальное производство программного обеспечения</a>. Данное направление подготовки отличается от подготовки инженеров-программистов по профилю «Программное обеспечение вычислительной техники и автоматизированных систем» тем, что общеинженерные дисциплины заменены дисциплинами из новой области знания <a href="#">инженерия программного обеспечения</a>. Объектами профессиональной деятельности инженеров по производству программного обеспечения являются не программы и программные комплексы, а <i>методы и инструменты разработки программного продукта, а</i> также <i>процессы жизненного цикла программного продукта</i>.</p>
+        <p>Предметом деятельности программистов в науке является решение задач с применением методов прикладной математики и реализацией на ЭВМ (результатом деятельности является полученное при помощи программы решение задачи).</p>
+        <p>В России подготовка специалистов в этой области ведется по следующим направлениям:</p><br>
+		</div>
+        <ul class="wiki4list">
+		  <li><span>02.03.02 «Фундаментальная информатика и информационные технологии»</span></li>
+          <li><span>01.03.02 «Прикладная математика и информатика»</span></li>
+          <li><span>38.03.05 «Бизнес-информатика»</span></li>
+          <li><span>10.03.01 «Информационная безопасность»</li>
+          <li><span>09.03.01 «Информатика и вычислительная техника»<sup>[2]</sup></span></li>
+          <li><span>09.03.02 «Информационные системы и технологии»</span></li>
+          <li><span>09.03.03 «Прикладная информатика»</span></li>
+          <li><span>09.03.04 «Программная инженерия»<sup>[4]</sup></span></li>
+		</ul>
+        <p class="wiki4text">Как вспомогательная деятельность программирование в настоящее время используется в широчайшем круге профессий.</p>
+	 </div>
+	 <div class="wiki6">
+	   <h1>Самообразование</h1><hr>
+	   <div class="wiki7">[ <a href="#" title="Править введение">править</a> | <a href="#" title="Править введение">править вики-текст</a> ]</div>
+	    <div class="wiki7text">
+		<p>В связи со значительным распространением в современном обществе вычислительной техники и, соответственно, программирования как род деятельности в настоящее время потребность в профессиональных программистах в развитых странах и странах третьего мира значительно превосходит возможности высшего образования по подготовке на соответствующих специальностях, при этом предъявляемые квалификационные требования в бизнесе в большинстве случаев значительно у́же, чем подготовка по специальности в вузе (см. напр.<sup>[5]</sup>). В связи с этим, очень широко распространено самообразование программистов и профессиональная деятельность в области программирования без получения формального образования по соответствующей специальности, а специалистам, получившим программистские специальности, необходимо постоянно совершенствовать свои знания и умения и оперативно осваивать новые технологии.</p>
+       </div>
+      </div>
+	 <div class="wiki8">
+	   <h1>Словоупотребление</h1><hr>
+	   <div class="wiki9">[ <a href="#" title="Править введение">править</a> | <a href="#" title="Править введение">править вики-текст</a> ]</div>
+	    <div class="wiki9text">
+		<p>Как указано выше, с точки зрения корректной терминологии человек может иметь (например) <a href="#"><i>род занятий</i></a> «программист», <a href="#"><i>квалификацию</i></a> «инженер-программист», <a href="#"><i>специальность</i></a> «программное обеспечение вычислительной техники и автоматизированных систем» и должность «ведущий специалист». В разговорной речи, однако, слово «программист» нередко употребляется применительно ко всем этим понятиям.</p>
+        <p>По ошибке программистами порой называют <a href="#">системных администраторов</a> и других специалистов ИТ.</p>
+       </div>
+      </div>
+	  <div class="wiki10">
+	   <h1>Прикладные и системные программисты</h1><hr>
+	   <div class="wiki11">[ <a href="#" title="Править введение">править</a> | <a href="#" title="Править введение">править вики-текст</a> ]</div>
+	    <div class="wiki11text">
+		<p>В настоящее время, как и ранее широко применяется классификация программистов на прикладных и системных. Прикладным называется программист, программы которого предназначены для решения прикладной задачи, удовлетворяющей потребности конечного пользователя и, по замыслу классификации, лежащей вне компьютерной сферы. Системным называется программист, программы которого предназначены для обеспечения работы компьютера и используются другими компьютерными специалистами.</p>
+       </div>
+      </div>
+       <div class="wiki12">
+	   <h1>История</h1><hr>
+	   <div class="wiki13">[ <a href="#" title="Править введение">править</a> | <a href="#" title="Править введение">править вики-текст</a> ]</div>
+	    <div class="wiki12text">
+		<p>Возникновение программирования как рода занятий и, особенно, как профессиональной деятельности трудно датировать однозначно.
+        <p>Первым аналогом программируемого устройства была музыкальная шкатулка и шарманка, программа записывалась на вращающийся вал. Тот же принцип двоичной системы как и на перфокарте, звук воспроизводился выступом на валу "кулачком", нет выступа нет звука, кроме того шарманка предусматривала смену программ и имела 6-8 запрограммированных мелодий.</p>
+        <p>Первым программируемым устройством принято считать <a href="#">жаккардовый ткацкий станок</a>, построенный в <a href="#">1804 году Жозефом Мари Жаккаром</a>, который произвёл революцию в ткацкой промышленности, предоставив возможность программировать узоры на тканях при помощи перфокарт.</p>
+        <p>Первое программируемое вычислительное устройство, <a href="#">Аналитическую машину</a>, разработал <a href="#">Чарльз Бэббидж</a> (но не смог её построить). <a href="#">19 июля 1843 года</a> графиня <a href="#">Ада Августа Лавлейс</a>, дочка великого английского поэта <a href="#">Джорджа Байрона</a>, как принято считать, написала первую в истории человечества <a href="#">программу</a> для Аналитической машины. Эта программа решала <a href="#">уравнение Бернулли</a>, выражающее закон сохранения энергии движущейся жидкости.</p>
+        <p>В своей первой и единственной научной работе Ада Лавлейс рассмотрела большое число вопросов. Ряд высказанных ею общих положений (принцип экономии рабочих <a href="#"><span class="red">ячеек памяти</a>, связь <a href="#">рекуррентных формул</a> с <a href="#">циклическими</a> процессами вычислений) сохранили свое принципиальное значение и для современного программирования. В материалах Бэббиджа и комментариях Лавлейс намечены такие понятия, как <a href="#">подпрограмма</a> и <a href="#">библиотека подпрограмм</a>, модификация <a href="#">команд</a> и <a href="#">индексный регистр</a>, которые стали употребляться только в 1950-х годах.</p>
+        <p>Однако ни одна из программ, написанных Адой Лавлейс, никогда так и не была запущена.</p>
+        <p>Аду Августу, графиню Лавлейс, принято считать почётным первым программистом (хотя, конечно, написание одной программы по современным меркам не может считаться родом занятий или профессиональной деятельностью). История сохранила её имя в названии универсального <a href="#">языка программирования «Ада»</a>.</p>
+        <p>Первый работающий программируемый компьютер (<a href="#">1941 год</a>), первые программы для него, а также (с определёнными оговорками) первый язык программирования высокого уровня <a href="#">Планкалкюль</a> создал немецкий инженер <a href="#">Конрад Цузе</a>.</p>
+        <p>Имена людей, впервые начавших профессионально выполнять работу собственно по программированию (в отрыве от наладки аппаратуры компьютера), история не сохранила, так как поначалу программирование рассматривалось как второстепенная наладочная операция.</p>
+       </div>
+      </div>
+      
+    </div>
+    </div>
+  </body>
+</html>
