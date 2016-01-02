@@ -1,0 +1,86 @@
+$base-grey: #ccc;
+
+.authorization-form-ko
+{
+	.titleAuth
+	{
+		color: $base-orange;
+	}
+
+	.account-wall
+	{
+	    background-color: $base-white;
+	    border-radius: 12px;
+
+		.form-signin
+		{
+		    padding: 10px;
+		    margin: 0 auto;
+
+			.form-control
+			{
+	    		margin-bottom: 17px;
+			    position: relative;
+			    font-size: 16px;
+			    height: auto;
+			    padding: 10px;
+			}
+
+			.name
+			{
+				border: 3px solid base-orange;
+			}
+
+			.pass
+			{
+				background-color: $base-grey;
+				border: none;
+				margin-bottom: 30px;
+			}
+
+			.options
+			{
+				color: $base-orange;
+			    font-weight: 400;
+			}
+
+			.enter
+			{
+				border: 3px solid $base-yellow;
+				background-color: $base-orange;
+				border-radius: 25px;
+				font-size: 12px;
+				height: 50px;
+			}
+
+			.social 
+			{
+	    		margin: 35px 0px 20px 0px;
+				color: $base-blue;
+			}
+
+			.icons
+			{
+			    height: 45px;
+			    margin-bottom: 20px; 
+			    
+			    .ico
+				{
+					display: inline-block;
+				    height: 45px;
+				    width: 45px;
+					background: $base-blue;
+					border-radius: 50%;				
+	    			margin: 0px 5px 0px 5px;		
+					line-height: 45px;
+					font-size: 25px;
+
+					.ref
+					{
+					    color: $base-white; 
+					}
+				}
+			}
+		}
+	}
+}

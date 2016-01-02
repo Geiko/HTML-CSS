@@ -1,0 +1,385 @@
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+
+// Import Bootstrap for Sass
+@import "bootstrap";
+
+
+
+html, body{
+ 	height: 100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+ 	background: #515f67;
+}
+
+.clearfix
+{
+	clear: both;
+}
+
+.wraper
+{
+	width: 100%;
+	max-width: 1920px;
+	height: 100%;
+	background-size: auto 100%;
+	margin: 0 auto;
+	background: #515f67;
+	
+	.wraper1
+	{
+		width: 100%;
+		max-width: 1920px;
+		height: 100%;
+		max-height: 800px;
+		background: url('../images/sky.jpg') no-repeat center center;
+		background-size: auto 100%;
+		margin: 0 auto;
+		
+			.menu
+			{
+				width: 100%;	
+				max-width: 1920px;	
+				height: 150px;	
+				background: #2f353a;
+				opacity: 0.8;
+				margin: 0 auto;
+				
+				.companyName
+				{
+					color: #ffffff;
+					line-height: 100px;
+					font-size: 23pt;
+					font-weight: 600;
+					font-family: sans-serif;
+					
+					.letter
+					{
+						color: #4bcaff;
+					}
+				}	
+
+				.menStyle
+				{
+					line-height: 100px;
+				}
+			}
+
+			.text
+			{
+				width: 100%;	
+				max-width: 1920px;	
+				height: 650px;
+				position: relative;
+				
+				.txt
+				{	
+					position: absolute;
+				    top: 0;
+				    bottom: 0;
+				    left: 0;
+				    right: 0;
+				    height: 30%;
+				    margin: auto;
+				    
+					.text1
+					{
+						/*height: 60px;	*/
+						margin: 20px;
+						color: #ffffff;
+						font-size: 40px;
+						font-size: 2.083vw;						
+						font-weight: 300;
+						
+						p{
+							display: inline-block;
+							text-transform: uppercase;
+							background: #515f67;
+							padding: 7px 15px;
+							margin: 0 5px;
+						}
+					}
+				}
+				
+			}
+		
+	}
+
+	.wraper2
+	{
+		width: 100%;
+		max-width: 1920px;
+		height: 100%;
+		max-height: 405px;
+		background: #4bcaff;
+		background-size: auto 100%;
+		margin: 0 auto;
+		
+		.wrp2
+		{
+			width: 100%;	
+			max-width: 1920px;	
+			height: 405px;
+			display: table;
+			
+			.wrp3
+			{
+				display: table-cell;
+    			vertical-align: middle;
+
+				.colorStyle2
+				{
+					color: #ffffff;
+					font-size: 8px;
+					font-size: 0.42vw;
+				}
+
+				.fontStyle
+				{
+					font-size: 16px;
+					font-size: 1vw;
+				}
+			}		
+		}
+
+	}
+
+	.wraper3
+	{
+		width: 100%;
+		max-width: 1920px;
+		height: 845px;
+		background: #ffffff;
+		background-size: auto 100%;
+		margin: 0 auto;
+		
+			.menu2
+			{
+				width: 100%;	
+				max-width: 1920px;	
+				height: 170px;	
+				margin: 0 auto;
+
+				.portfolio
+				{
+					font-size: 20pt;	
+					color: #515f67;
+					line-height: 170px;
+					font-weight: 600;
+					font-family: sans-serif;							
+				}
+
+				.menStyle2
+				{
+					line-height: 170px;
+				}
+			}
+			.photo3
+			{
+				margin-top: 12px;
+			}
+			
+
+	}
+
+	.wraper4
+	{
+		width: 100%;
+		height: 475px;
+		background-size: auto 100%;
+		margin: 0 auto;
+		.custom
+		{
+			margin-top: 45px;
+		}
+
+		.colorStyle4
+		{
+			color: #cccccc;
+			font-size: 30px;
+		}
+
+		.textStyle4
+		{
+			color: #cccccc;
+			font-size: 16px;
+			font-size: 0.83vw;
+			margin: 30px 0;
+		}
+
+		.btn
+		{
+			background:  #515f67;
+			border-color: #414E56;
+			border-radius: 0;
+		    padding: 14px 40px;
+		    font-size: 14px;
+		    line-height: normal;
+		    margin-top: -20px;
+		}
+		.cust4
+		{
+			padding-top: 30px;
+		}
+	}
+
+	.wraper5
+	{
+		width: 100%;
+		max-width: 1920px;
+		height: 100%;
+		max-height: 305px;
+		background: #4bcaff;
+		background-size: auto 100%;
+		margin: 0 auto;
+		
+		.menu5
+		{
+			width: 100%;	
+			max-width: 1920px;	
+			height: 170px;	
+			margin: 0 auto;
+
+			.twitter
+			{
+				font-size: 20pt;	
+				color: #ffffff;
+				line-height: 170px;
+				font-weight: 600;
+				font-family: sans-serif;
+			}
+
+			.menStyle5
+			{
+				line-height: 170px;
+				color: #ffffff;
+				font-size: 30px;
+			}
+		}
+
+		.textStyle5
+		{
+			color: #ffffff;
+			font-size: 25px;
+			font-weight: 100;
+		}
+
+		a
+		{
+			color: #ffffff;
+			font-size: 25px;
+			font-weight: 100;
+		}
+	}
+
+
+	.wraper6
+	{
+		width: 100%;
+		max-width: 1920px;
+		height: 100%;
+		max-height: 505px;
+		background: url('../images/photo.jpg') no-repeat center center;
+		background-size: auto 100%;
+		margin: 0 auto;
+	}
+
+	.wraper7
+	{
+		width: 100%;
+		max-width: 1920px;
+		height: 100%;
+		max-height: 360px;
+		background: #ffffff;
+		background-size: auto 100%;
+		margin: 0 auto;
+				
+		.menu7
+		{
+			width: 100%;	
+			max-width: 1920px;	
+			height: 170px;	
+			margin: 0 auto;
+
+			.testim
+			{
+				font-size: 20pt;	
+				color: #515f67;
+				line-height: 170px;
+				font-weight: 600;
+				font-family: sans-serif;
+			}
+
+			.menStyle7
+			{
+				line-height: 170px;
+				color: #515f67;
+				font-size: 30px;
+			}
+		}
+
+		.textStyle7
+		{
+			color: #515f67;
+			font-size: 25px;
+			font-weight: 100;
+		}
+
+		.color7
+		{
+			color: #4bcaff;
+			font-weight: 800;
+		}
+	}
+
+
+	.wraper8
+	{
+		width: 100%;
+		max-width: 1920px;
+		height: 100%;
+		max-height: 814px;
+		background: url('../images/kofe.jpg') no-repeat center center;
+		background-size: auto 100%;
+		margin: 0 auto;
+	}
+
+	.wraper9
+	{
+		width: 100%;
+		max-width: 1920px;
+		height: 100%;
+		max-height: 170px;
+		background: #353f47;
+		background-size: auto 100%;
+		margin: 0 auto;
+		
+		.menu9
+			{
+				width: 100%;	
+				max-width: 1920px;	
+				height: 150px;	
+				background: #2f353a;
+				opacity: 0.8;
+				margin: 0 auto;
+				
+				.menStyle9
+				{
+					line-height: 100px;
+					color: #cccccc;
+				}
+			}
+	}
+}
+
+
+
+		
